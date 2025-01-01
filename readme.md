@@ -244,8 +244,8 @@ Insertar datos en la tabla usuarios
 ```bash
 INSERT INTO usuarios (id, nombre, apellido, direccion, telefono, creacion_user)
 VALUES
-    (1, 'José', 'Franco Nieto', 'C/ Algaba nº 22 3ºC', 670302349, NOW()),
-    (2, 'Bozhidara', 'Angelova Nedyalkova', 'C/ Antonio Prieto nº 50 1ºA', 670302349, NOW()),
+    (1, 'José', 'Franco Nieto', 'C/ incognito', 670302349, NOW()),
+    (2, 'Bozhidara', 'Angelova Nedyalkova', 'C/ incognito', 670302349, NOW()),
     (3, 'Alejandro', 'García López', 'C/ Gran Vía nº 10 2ºB', 680123456, NOW()),
     (4, 'Lucía', 'Martínez Sánchez', 'C/ Alcalá nº 15 Bajo A', 690234567, NOW()),
     (5, 'Carlos', 'Hernández Gómez', 'C/ Serrano nº 45 3ºC', 670345678, NOW()),
