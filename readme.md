@@ -235,4 +235,25 @@ docker-compose down
 
 ---
 
+## BBDD
+
+### Script de ejecucion de usuarios
+
+Insertar datos en la tabla usuarios
+
+```bash
+INSERT INTO usuarios (id, nombre, apellido, direccion, telefono, creacion_user)
+VALUES
+    (1, 'José', 'Franco Nieto', 'C/ Algaba nº 22 3ºC', 670302349, NOW()),
+    (2, 'Bozhidara', 'Angelova Nedyalkova', 'C/ Antonio Prieto nº 50 1ºA', 670302349, NOW()),
+    (3, 'Alejandro', 'García López', 'C/ Gran Vía nº 10 2ºB', 680123456, NOW()),
+    (4, 'Lucía', 'Martínez Sánchez', 'C/ Alcalá nº 15 Bajo A', 690234567, NOW()),
+    (5, 'Carlos', 'Hernández Gómez', 'C/ Serrano nº 45 3ºC', 670345678, NOW()),
+    (6, 'María', 'Ruiz Fernández', 'C/ Velázquez nº 3 1ºA', 660456789, NOW()),
+    (7, 'David', 'Pérez Torres', 'C/ Castellana nº 50 5ºD', 650567890, NOW()),
+    (8, 'Elena', 'López Morales', 'C/ Hortaleza nº 100 4ºB', 640678901, NOW()),
+    (9, 'Miguel', 'Gómez Martín', 'C/ Princesa nº 20 Bajo B', 630789012, NOW()),
+    (10, 'Ana', 'Díaz Ramírez', 'C/ Mayor nº 80 2ºC', 620890123, NOW());
+```
+
 Con esta guía, puedes configurar, desarrollar y ejecutar proyectos básicos utilizando **Python**, **FastAPI** y **Docker**. ¡Listo para empezar! 🚀
