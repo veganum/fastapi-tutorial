@@ -213,40 +213,6 @@ gunicorn -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:8000
 
 ## Integración con Docker
 
-### Crear un Archivo Dockerfile
-
-Para ejecutar tu aplicación en un contenedor Docker, crea un archivo `Dockerfile` con el siguiente contenido:
-
-```dockerfile
-FROM python:3.9-slim
-
-WORKDIR /app
-
-COPY requirements.txt .
-
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY . .
-
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-```
-
-### Crear un Archivo `docker-compose.yml`
-
-Si prefieres usar Docker Compose, crea un archivo `docker-compose.yml` con el siguiente contenido:
-
-```yaml
-version: "3.9"
-services:
-  fastapi:
-    build: .
-    ports:
-      - "8000:8000"
-    volumes:
-      - .:/app
-    command: uvicorn main:app --host 0.0.0.0 --port 8000
-```
-
 ### Construir y Ejecutar el Contenedor
 
 Construye la imagen de Docker:
